@@ -9,6 +9,11 @@
 
 # dependencies
 /node_modules
+/scully
+
+# scully config
+scully.PortfolioManagerJoanCorderroure.config.ts
+
 
 # profiling files
 chrome-profiler-events*.json
