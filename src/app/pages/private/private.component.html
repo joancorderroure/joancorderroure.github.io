@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>Pàgina privada</h1>
+</div>
+
+<div class="container">
+    <button type="button" class="btn btn-primary mr-1" [routerLink]="['/home']">Pàgina principal</button>
+    <button type="button" class="btn btn-primary mr-1" [routerLink]="['/public']">Pàgina pública</button>
+</div>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nom de la practica:</th>
+        <th scope="col">Descripció de la practica:</th>
+        <th scope="col">Descargar la practica</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let practica of practiques">
+        <td> {{ practica.name }}</td>
+        <td> {{ practica.description }}</td>
+        <td><button type="button" class="btn btn-primary">Descargar la practica</button></td>
+      </tr>
+    </tbody>
+</table>

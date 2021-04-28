@@ -12,7 +12,7 @@ import { Practica } from './models/practica';
 
 export class AppComponent {
   
- public practiques: Practica[]; 
+ /*public practiques: Practica[]; 
  constructor(private firedb: FirebasedbService) {
     this.firedb.getPractiques().subscribe(
       (originalPractiques: Practica[]) => {
@@ -20,6 +20,6 @@ export class AppComponent {
       }
     )
  }
-
+*/
 }
   
