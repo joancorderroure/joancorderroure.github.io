@@ -7,6 +7,11 @@
     <button type="button" class="btn btn-primary mr-1" [routerLink]="['/public']">Pàgina pública</button>
 </div>
 
+
+<div class ="container">
+  <ckeditor [editor]="textEditor" [config]="editorConfig" [(ngModel)]="editorData"></ckeditor>
+</div>
+
 <table class="table">
     <thead>
       <tr>

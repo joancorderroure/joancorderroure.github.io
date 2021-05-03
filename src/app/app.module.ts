@@ -14,6 +14,8 @@ import { LogoutComponent } from './pages/logout/logout.component';
 import { PublicComponent } from './pages/public/public.component';
 import { PrivateComponent } from './pages/private/private.component';
 import { DetailsComponent } from './pages/public/details/details.component';
+import { FormsModule } from '@angular/forms';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { DetailsComponent } from './pages/public/details/details.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    CKEditorModule,
     ScullyLibModule,
     AngularFireModule.initializeApp(environment.firebase)
   ],
